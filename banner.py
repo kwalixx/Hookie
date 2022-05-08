@@ -1,8 +1,13 @@
 from colorama import init, Fore
+from os import system
+from sys import platform
+
 init(autoreset=True)
 
+
 def banner():
-  print(f"""{Fore.MAGENTA}
+    system('cls') if platform == 'win32' else system('clear')
+    print(f"""{Fore.MAGENTA}
   
                                                          
 @@@  @@@   @@@@@@    @@@@@@   @@@  @@@  @@@  @@@@@@@@  
